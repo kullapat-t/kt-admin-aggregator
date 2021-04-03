@@ -1,0 +1,32 @@
+type User {
+    id: ID!
+    name: String!
+    fullName: String @deprecated(reason: "use name instead")
+    username: String!
+    email: String
+    enabled: Boolean
+    wallets: [Wallet]
+    createdDate: String
+    modifiedDate: String
+}
+type Wallet {
+    id: ID!
+    name: String
+    amount: Int
+    # transactions: [Transaction]
+}
+input UserInput {
+    name: String
+    username: String
+    email: String
+}
+
+type Query {
+    users(id: ID, name: String, username: String): [User]
+    userById(id: ID): User
+}
+
+type Mutation {
+    addUser(user: UserInput): User
+    toggleUserStatus(id: ID): User
+}

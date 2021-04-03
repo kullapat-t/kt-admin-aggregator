@@ -1,0 +1,34 @@
+[
+    {
+        "id": "f738eb08-4391-4f4f-a324-796d9f7c8df8",
+        "name": "Test user 001",
+        "username": "n1",
+        "email": "n1@kullapat.com",
+        "enabled": true,
+        "createdDate": 1617437436000,
+        "modifiedDate": 1617437436000
+    },
+    {
+        "id": "a1849475-3949-4e1e-b330-86dc9d9299cc",
+        "name": "Test user 002",
+        "username": "n2",
+        "email": "n2@kullapat.com",
+        "enabled": false,
+        "createdDate": 1617351036000,
+        "modifiedDate": 1617351036000
+    },
+    {
+        "id": "84375",
+        "name": "Test user 003",
+        "username": "n3",
+        "email": "n3@kullapat.com",
+        "enabled": false,
+        "createdDate": 1617351036000,
+        "modifiedDate": 1617351036000,
+        "wallets": [
+            {
+              "id": "2bda8276-b7b6-4653-a7c5-1bcc59d11a49"
+            }
+        ]
+    }
+]
